@@ -11,15 +11,15 @@ app.get("/", (req, res) => res.send(`
   <html>
     <head><title>Success!</title></head>
     <body>
-      <h1>You did it!</h1>
-      <img src="https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" alt="Cool kid doing thumbs up" />
+      <h1>Success!</h1>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fcyruscloud%2Fart%2FMegaMan-X-Revived-393813312&psig=AOvVaw3x5Oogql2w2Uoxxtlr5585&ust=1653665123905000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLjbree8_fcCFQAAAAAdAAAAABAT" alt="MegaMan ThumbsUp" />
     </body>
   </html>
 `));
 
 app.post("/github", (req, res) => {
-  const content = ":wave: Hi mom!";
-  const avatarUrl = "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif";
+  const content = ":wave: Success!";
+  const avatarUrl = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fcyruscloud%2Fart%2FMegaMan-X-Revived-393813312&psig=AOvVaw3x5Oogql2w2Uoxxtlr5585&ust=1653665123905000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLjbree8_fcCFQAAAAAdAAAAABAT";
   axios
     .post(process.env.DISCORD_WEBHOOK_URL, {
       content: content,
